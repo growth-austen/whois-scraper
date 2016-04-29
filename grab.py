@@ -1,10 +1,13 @@
+
 import whois
 import json
 import io
+import time
 
 #Take the URL file and turn it into an array
 f = open('urls.txt')
-urls = f.readlines()
+urls = f.read().splitlines()
+print urls
 
 f = open('urlinfo.txt', 'a')
 
